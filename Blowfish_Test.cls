@@ -14,7 +14,7 @@ public class Blowfish_Test {
         String encryptedMessage = Blowfish.encrypt(message,key);
         system.debug('encryptedMessage: ' + encryptedMessage);   
         
-        String decryptedMessage = Blowfish.decrypt(encryptedMessage,key,message.length());
+        String decryptedMessage = Blowfish.decrypt(encryptedMessage,key,12);
         system.debug('decryptedMessage: ' + decryptedMessage);
         System.assert(decryptedMessage==message);
     }
